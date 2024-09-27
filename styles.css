@@ -242,16 +242,35 @@
     }
   
     .carrossel {
-      flex-direction:row; /* Muda o carrossel para uma coluna */
-      gap: 15px; /* Ajusta o espaçamento entre os produtos */
-    }
-  
-    .produto {
-      width: 120px; /* Reduz o tamanho do produto no mobile */
-    }
-  
-    .produto img {
-      max-width: 80px; /* Reduz o tamanho das imagens dos produtos */
+        gap: 10px;
+        padding: 15px; /* Reduz o padding no mobile */
+      }
+    
+      .produto {
+        max-width: 150px; /* Reduz o tamanho dos produtos no mobile */
+        padding: 10px; /* Reduz o padding interno dos produtos */
+      }
+    
+      .produto img {
+        margin-bottom: 10px; /* Reduz o espaço entre imagem e texto no mobile */
+      }
+    
+      .produto a {
+        font-size: 14px; /* Reduz o tamanho do link no mobile */
+      }
+    
+      button.prev, button.next {
+        padding: 8px 12px; /* Reduz o tamanho dos botões */
+        font-size: 16px; /* Tamanho menor da fonte para os botões */
+      }
+    
+      button.prev {
+        left: -5px; /* Ajusta a posição dos botões para caber melhor */
+      }
+    
+      button.next {
+        right: -5px; /* Ajusta a posição dos botões para caber melhor */
+      }
     }
   
     /* Ajustes para o conteúdo sobre a loja */
