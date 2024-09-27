@@ -8,25 +8,29 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
     
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.produto');
-    const totalSlides = slides.length;
-    
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? 'block' : 'none';
-        });
-    }
+    let currentIndex = 0;
+    const produtos = document.querySelectorAll('.produto');
+    const totalProdutos = produtos.length;
     
     document.querySelector('.next').addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
+      changeSlide('next');
     });
     
     document.querySelector('.prev').addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
+      changeSlide('previous');
     });
     
-    showSlide(currentSlide);
+    function changeSlide(direction) {
+      produtos[currentIndex].classList.remove('active');
     
+      if (direction === 'next') {
+        currentIndex = (currentIndex + 1) % totalProdutos; // Avança para o próximo produto
+      } else if (direction === 'previous') {
+        currentIndex = (currentIndex - 1 + totalProdutos) % totalProdutos; // Volta para o produto anterior
+      }
+    
+      produtos[currentIndex].classList.add('active');
+    }
+    
+    // Inicializa o carrossel com o primeiro produto visível
+    produtos[currentIndex].classList.add('active');
