@@ -164,19 +164,66 @@
   }
   
   @media screen and (max-width: 768px) {
+    /* Header */
+    header {
+      padding: 10px; /* Diminui o espaçamento do header */
+      flex-direction: column; /* Empilha logo e menu */
+    }
+  
+    header h1 {
+      font-size: 18px; /* Diminui o tamanho do logo */
+      margin-bottom: 10px; /* Espaço entre o logo e o menu */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Coloca o menu em coluna no mobile */
+      align-items: center; /* Centraliza os itens do menu */
+    }
+  
+    nav ul li {
+      margin: 5px 0; /* Reduz o espaçamento entre os itens do menu */
+    }
+  
+    nav ul li a {
+      font-size: 16px; /* Diminui o tamanho do texto do menu */
+    }
+  
+    /* Ajustes para o catálogo no mobile */
+    #catalogo {
+      padding: 20px; /* Reduz o padding na versão mobile */
+    }
+  
+    #catalogo h2 {
+      font-size: 20px; /* Diminui o tamanho do título do catálogo */
+    }
+  
+    .carrossel {
+      flex-direction:row; /* Muda o carrossel para uma coluna */
+      gap: 15px; /* Ajusta o espaçamento entre os produtos */
+    }
+  
+    .produto {
+      width: 120px; /* Reduz o tamanho do produto no mobile */
+    }
+  
+    .produto img {
+      max-width: 80px; /* Reduz o tamanho das imagens dos produtos */
+    }
+  
+    /* Ajustes para o conteúdo sobre a loja */
     .sobre-container {
-      flex-direction: column; /* Coloca os itens em uma coluna em vez de linha */
-      align-items: center; /* Centraliza o texto e a imagem */
+      flex-direction: column; /* Coloca o texto e a imagem em coluna no mobile */
+      align-items: center; /* Centraliza o conteúdo */
     }
   
     .sobre-texto {
-      max-width: 100%; /* O texto vai ocupar toda a largura */
-      text-align:left; /* Centraliza o texto no mobile */
-      margin-bottom: 20px; /* Adiciona um espaço entre o texto e a imagem */
+      max-width: 100%;
+      text-align: left;
+      margin-bottom: 20px; /* Espaço entre o texto e a imagem */
     }
   
     .fachada-jp {
-      max-width: 100%; /* A imagem vai ocupar toda a largura da tela no mobile */
+      max-width: 100%; /* A imagem ocupa toda a largura da tela no mobile */
       margin-left: 0; /* Remove a margem lateral da versão desktop */
     }
   }
