@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #1e90ff;
+    color:#f4f4f9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #f4f4f9;
+  }
+  
+  #sobre {
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .sobre-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+  
+  .sobre-texto {
+    max-width: 50%; 
+  }
+  
+  .sobre-texto h2 {
+    color: #1e90ff;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .fachada-jp {
+    max-width: 45%; 
+    height: auto; 
+    margin-left: 20px; 
+  }
+
+  #catalogo {
+    padding: 40px;
+    background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  .carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .produto {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produto img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .produto a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+  }
+  
+  .produto a:hover {
+    color: #333;
+  }
+  
+  #contato {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contato-icons a {
+    margin: 0 10px;
+  }
+  
+  .contato-icons img {
+    width: 40px;
+    margin-top: 15px;
+  }
+  
+  .endereco {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #1e90ff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .carrossel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .produto {
+    display: none;
+  }
+  
+  button.prev, button.next {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: #333;
+  }
+  
+  .produto:first-child {
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sobre-container {
+      flex-direction: column; /* Coloca os itens em uma coluna em vez de linha */
+      align-items: center; /* Centraliza o texto e a imagem */
+    }
+  
+    .sobre-texto {
+      max-width: 100%; /* O texto vai ocupar toda a largura */
+      text-align:left; /* Centraliza o texto no mobile */
+      margin-bottom: 20px; /* Adiciona um espaço entre o texto e a imagem */
+    }
+  
+    .fachada-jp {
+      max-width: 100%; /* A imagem vai ocupar toda a largura da tela no mobile */
+      margin-left: 0; /* Remove a margem lateral da versão desktop */
+    }
+  }
