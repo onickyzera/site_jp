@@ -96,6 +96,10 @@ h2 {
   text-align: left;
 }
 
+#sobre, #produtos, #contato {
+  scroll-margin-top: 100px; /* Adiciona uma margem no topo ao rolar para essas seções */
+}
+
 /* Carrossel */
 #produtos {
   padding: 60px 0;
@@ -163,7 +167,10 @@ h2 {
   margin: 10px;
   padding: 12px 30px;
   border-radius: 30px;
+  font-weight: 500;
   transition: background-color 0.3s, color 0.3s;
+  /* Removemos as propriedades display: flex; e align-items */
+  text-align: center; /* Centraliza o texto nos botões */
 }
 
 #contato .btn-outline-primary {
@@ -174,12 +181,6 @@ h2 {
 #contato .btn-outline-primary:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
-}
-
-/* Botões de redes sociais com ícones maiores */
-#contato .btn i {
-  font-size: 24px;
-  margin-right: 8px;
 }
 
 /* Rodapé */
