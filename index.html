@@ -2,76 +2,150 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP Artesanatos</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"     integrity="sha512-Fo3rlrZj/k7ujTTXJq6GEX1bv5i9Rq8Xjn2SgI0bKqJC8EdqI0LLd6e8Vh9B9j3e6IDu7Bu0nZEVmI0+UufmVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Arquivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
-        <div class="logo">
-        <h1>JP Artesanatos</h1>
-        </div>
-        <nav>
-        <ul>
-            <li><a href="#sobre">Sobre a loja</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">JP Artesanatos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"     aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="sobre">
-        <div class="sobre-container">
-        <div class="sobre-texto">
-            <h2>JP Artesanatos - Um axé para todos!</h2>
-            <p>
-            Há mais de 8 anos, a JP Artesanatos oferece produtos<br> de qualidade para todas as tradições espirituais. <br><br>Localizada 
-            no coração de São Gabriel, nossa loja é um<br> 
-            ponto de referência para quem busca itens voltados à<br> umbanda, candomblé, ciganos, misticismo e muito mais.<br><br> Com uma 
-            vasta seleção de chapéus, perfumes, saias,<br> velas, incensos e imagens de gesso, nossa missão é trazer<br> espiritualidade,
-            tradição e boas energias a preços acessíveis.
-            </p>
-            <p>
-            Aqui, você encontra tudo o que precisa para suas práticas,<br> com a certeza de estar adquirindo produtos de alta 
-            qualidade<br> e com o melhor atendimento.
-            </p>
-        </div>
-        <img class="fachada-jp" src="./images/jp-ar.png" alt="Fachada da loja">
+    <!-- Espaço para compensar o menu fixo -->
+    <div style="margin-top: 80px;"></div>
+
+    <!-- Seção Hero -->
+    <section id="hero" class="text-center py-5">
+        <div class="container">
+            <h2 class="text-primary">Bem-vindo à JP Artesanatos</h2>
+            <p class="lead">Arte e beleza para o seu dia a dia</p>
+            <img src="./images/jp-ar.png" alt="Fachada da JP Artesanatos" class="img-fluid mt-4">
         </div>
     </section>
 
-    <section id="catalogo">
-        <h2>Catálogo</h2>
-        <div class="carrossel">
-        <button class="prev">Anterior</button>
-        <div class="produto">
-            <img src="./images/Captura de tela 2024-09-27 151945.png" alt="Produto 1">
-            <a href="https://wa.me/c/555599300834" target="_blank">Ver no WhatsApp</a>
-        </div>
-        <div class="produto">
-            <img src="./images/imagens.png" alt="Produto 2">
-            <a href="https://wa.me/p/8371633872910319/555599300834" target="_blank">Ver no WhatsApp</a>
-        </div>
-        <button class="next">Próximo</button>
-        </div>
-    </section>
-    
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <div class="contato-icons">
-        <a href="https://www.facebook.com/jpgessoecimento" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/jpartesanatossg" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-        <a href="https://wa.me/555599300834" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
-        </div>
-        <div class="endereco">
-        <p>General Marques, 633, Centro, São Gabriel - RS</p>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-primary mb-4">Sobre Nós</h2>
+            <p>Há mais de 8 anos, a JP Artesanatos oferece produtos
+                de qualidade para todas as tradições espirituais. <br>
+                
+                Localizada no coração de São Gabriel, nossa loja é um
+                ponto de referência para quem busca itens voltados à
+                umbanda, candomblé, ciganos, misticismo e muito mais.<br>
+                <br>
+                Com uma vasta seleção de chapéus, perfumes, saias,
+                velas, incensos e imagens de gesso, nossa missão é trazer
+                espiritualidade, tradição e boas energias a preços acessíveis. <br>
+                <br>
+                Aqui, você encontra tudo o que precisa para suas práticas,
+                com a certeza de estar adquirindo produtos de alta qualidade
+                e com o melhor atendimento.</p>
         </div>
     </section>
 
-    <footer>
-        <p>© 2024 JP Artesanatos - Todos os direitos reservados</p>
+    <!-- Carrossel de Imagens -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">Nossos Produtos</h2>
+            <div id="carouselProdutos" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <a href="https://shopee.com.br/produto1" target="_blank">
+                            <img src="./images/imagens.png" class="d-block w-100" alt="Produto 1">
+                        </a>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <a href="https://shopee.com.br/produto2" target="_blank">
+                            <img src="./images/jp-ar.png" class="d-block w-100" alt="Produto 2">
+                        </a>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <a href="https://shopee.com.br/produto3" target="_blank">
+                            <img src="imagens/produto3.jpg" class="d-block w-100" alt="Produto 3">
+                        </a>
+                    </div>
+                    <!-- Adicione mais itens conforme necessário -->
+                </div>
+                <!-- Controles -->
+                <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselProdutos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">Contato</h2>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="https://instagram.com/jpartesanatos" target="_blank" class="btn btn-outline-primary m-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-outline-primary m-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://facebook.com/jpartesanatos" target="_blank" class="btn btn-outline-primary m-2">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://shopee.com.br/jpartesanatos" target="_blank" class="btn btn-outline-primary m-2">
+                    <i class="fas fa-shopping-bag"></i> Shopee
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 JP Artesanatos. Todos os direitos reservados.</p>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <!-- Scripts -->
+    <!-- jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
 </body>
 </html>
